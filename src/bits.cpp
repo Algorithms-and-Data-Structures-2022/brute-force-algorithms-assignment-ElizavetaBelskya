@@ -6,7 +6,7 @@ namespace assignment {
 
   bool is_bit_set(int mask, int pos) {
     assert(mask >= 0 && pos >= 0 && pos < 30);
-    return (mask & (1 << pos) > 0);
+    return (mask &( 1 << pos)) > 0;
   }
 
   int set_bit(int mask, int pos) {
@@ -24,7 +24,6 @@ namespace assignment {
         indices.push_back(pos);
       }
     }
-
     return indices;
   }
 
