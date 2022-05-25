@@ -47,6 +47,8 @@ namespace assignment {
     if (sum == target_sum) {
       // ... сохранение в результат
       // ... нужно ли в этой ветке рекурсии рассматривать следующие элементы?
+      indices.push_back(mask2indices(set, mask));
+      return;
     }
 
     // рассматриваем следующий элемент
